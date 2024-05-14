@@ -1,17 +1,14 @@
-# ディレクトリ構成
-
-```bash
 .
 ├── README.md
 ├── next.config.mjs
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.mjs
-├── public // 静的ファイル
+├── public
 │   ├── next.svg
 │   └── vercel.svg
 ├── src
-│   ├── app // ルーティング
+│   ├── app
 │   │   ├── about
 │   │   │   └── page.tsx
 │   │   ├── blog
@@ -22,18 +19,18 @@
 │   │   ├── layout.tsx
 │   │   └── page.tsx
 │   ├── components
-│   │   ├── elements // ページ間で使い回すコンポーネント（ボタンなど）
+│   │   ├── elements
 │   │   │   ├── button
 │   │   │   │   └── Button.tsx
 │   │   │   └── input
 │   │   │       └── Input.tsx
-│   │   └── layouts // 画面が切り替わっての常に表示していたいもの
+│   │   └── layouts
 │   │       ├── footer
 │   │       │   └── Footer.tsx
 │   │       └── header
 │   │           └── Header.tsx
-│   └── features // 一つのページにしかないコンポーネントを管理する
-│       ├── blog // 特定の機能のコンポーネント
+│   └── features
+│       ├── blog
 │       │   ├── api
 │       │   │   └── getBlog.ts
 │       │   ├── components
@@ -47,14 +44,17 @@
 │       │   │   └── index.ts
 │       │   ├── hooks
 │       │   │   └── useBlog.ts
-│       │   ├── store // 特定の機能内で使うstate
+│       │   ├── store
 │       │   │   └── index.ts
 │       │   └── types
 │       │       └── index.ts
-│       └── user // 特定の機能のコンポーネント
+│       └── user
 │           ├── api
 │           ├── components
 │           └── types
+├── tailwind.config.ts
+├── tree.txt
 ├── tsconfig.json
 └── yarn.lock
-```
+
+28 directories, 30 files
